@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter truthy values from an array</title>
+  </head>
+  <body>
+    <script>
+      const values = [0, 1, false, "hello", "", undefined, "world"];
+      const truthyValues = values.filter(Boolean);
+      console.log(truthyValues);
+    </script>
+  </body>
+</html>

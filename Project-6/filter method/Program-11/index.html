@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Object where age >18</title>
+  </head>
+  <body>
+    <script>
+      const person = [
+        { name: "Richa", age: 18 },
+        { name: "Dhruv", age: 16 },
+        { name: "Rohan", age: 21 },
+      ];
+      const adults = person.filter((person) => person.age >= 18);
+      console.log(adults);
+    </script>
+  </body>
+</html>
