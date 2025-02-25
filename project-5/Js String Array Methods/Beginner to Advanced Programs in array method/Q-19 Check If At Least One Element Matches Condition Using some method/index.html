@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Check If At Least One Element Matches Condition Using some method
+    </title>
+  </head>
+  <body>
+    <script>
+      const orders = [
+        {
+          OrderId: 101,
+          status: "Shipped",
+        },
+        {
+          OrderId: 102,
+          status: "Pending",
+        },
+      ];
+      console.log(orders.some((order) => order.status === "Pending"));
+    </script>
+  </body>
+</html>

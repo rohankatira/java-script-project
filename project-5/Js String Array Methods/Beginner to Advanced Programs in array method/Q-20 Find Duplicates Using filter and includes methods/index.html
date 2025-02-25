@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Check If At Least One Element Matches Condition Using some method
+    </title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 2, 4, 5, 1];
+      const dublicates = numbers.filter(
+        (numbers, index, self) => self.indexOf(numbers) !== index
+      );
+      console.log(dublicates);
+    </script>
+  </body>
+</html>

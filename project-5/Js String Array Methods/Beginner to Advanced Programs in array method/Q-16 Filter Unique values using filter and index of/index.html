@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>filter unque values using filter and index of method</title>
+  </head>
+  <body>
+    <script>
+      const arr = [1, 2, 3, 2, 4, 3, 5];
+      const unique = arr.filter(
+        (value, index, self) => self.indexOf(value) === index
+      );
+      console.log(unique);
+    </script>
+  </body>
+</html>
